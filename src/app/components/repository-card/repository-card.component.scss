@@ -1,0 +1,46 @@
+.container {
+    margin-bottom: 64px;
+    .card-info {
+        .avatar {
+            img {
+                height: 150px;
+                width: 100%;
+                border: 0.5px solid #000000;
+                // object-fit: contain;
+            }
+        }
+        .text-info {
+            .title {
+                color: #000000;
+            }
+            .description {
+                color: #000000;
+                font-size: 12px;
+                margin-bottom: 24px;
+            }
+            .special-items {
+                display: flex;
+                flex-direction: row;
+                margin-right: 10px;
+                div:not(:first-child){
+                    margin-left: 16px;
+                }
+                span{
+                    color: #000;
+                }
+                .stars {
+                    padding: 4px;
+                    border: 1px solid #000000;
+                }
+                .issues {
+                    padding: 4px; 
+                    border: 1px solid #000000;
+                }
+                .submitted-date {
+                    padding: 4px; 
+
+                }
+            }
+        }
+    }
+}

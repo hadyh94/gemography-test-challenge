@@ -1,0 +1,17 @@
+
+<ng-container class="container"  (scroll)="onScroll($event)" >
+    <div *ngFor="let item of dataSource" style="margin-top: 64px;">
+      <app-repository-card [item]="item"></app-repository-card>
+    </div>
+    <div class="loader" style="margin-top: 64px;" *ngIf="isLoading;">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
+   <p style="text-align:center; margin-top: 8px;" *ngIf="isLimitExceeded"> Limted Exceeded Duo to Heavy Scrolling </p>
+   <div class="text-center" style="margin-top: 8px;">
+   <button *ngIf="isLimitExceeded" (click)="reload()">Reload Your Page</button>
+</div>
+</ng-container>
+
+  
+  
+  

@@ -1,0 +1,22 @@
+ng-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    max-height: 500px;
+    min-width: 300px;
+    
+}
+
+:host {
+    display: block;
+    max-height: 700px;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+.loader {
+    text-align: center;
+    i {
+        font-size: 32px;
+    }
+}
